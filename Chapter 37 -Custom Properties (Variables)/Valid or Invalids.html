@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valid/Invalids
+    </title>
+</head>
+<style>
+    /*Invalid - CSS bug */
+    /* .logo{
+    --logo-url: 'logo';
+    background: url('assets/img/' var(--logo-url) '.png');
+    }
+     Invalid - CSS bug */
+    /* .logo{
+    --logo-url: 'assets/img/logo.png';
+    background: url(var(--logo-url));
+    } */ 
+
+    /* Valid */
+    .Gojo{
+    height: 200px;
+    --gojo-url: url('Gojo.png');
+    background: var(--gojo-url);
+    }
+
+</style>
+<body>
+    <div class="Gojo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe magni eum cumque, obcaecati eius consequatur id ipsam error vero, natus quaerat sit quos fugit unde nam voluptatibus odit blanditiis temporibus.</div>
+</body>
+</html>
