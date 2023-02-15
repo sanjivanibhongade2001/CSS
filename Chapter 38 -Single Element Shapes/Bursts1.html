@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bursts</title>
+</head>
+<style>
+    .burst{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    background: rgb(147, 246, 85);
+    }
+    .burst::before, .burst::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    background: rgb(147, 246, 85);
+    }
+    .burst::before {
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    }
+    .burst::after {
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+    }
+
+</style>
+<body>
+    <div class="burst"></div>
+</body>
+</html>
