@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using masks to create images with irregular shapes</title>
+</head>
+<style>
+    div {
+    height: 200px;
+    width: 400px;
+    background-image: url("gojo.jpg");
+    mask-image: linear-gradient(to top right, transparent 49.5%, white 50.5%), linear-gradient(to top
+    left, transparent 49.5%, white 50.5%), linear-gradient(white, white);
+    mask-size: 75% 25%, 25% 25%, 100% 75%;
+    mask-position: bottom left, bottom right, top left;
+    mask-repeat: no-repeat;
+    }
+
+</style>
+<body>
+    <div></div>
+</body>
+</html>
