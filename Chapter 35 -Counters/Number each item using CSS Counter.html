@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number each item using CSS Counter</title>
+</head>
+<style>
+    body {
+    counter-reset: item-counter; /* create the counter */
+    }
+    .item {
+    counter-increment: item-counter; 
+    }
+    .item-header:before {
+    content: counter(item-counter) ". "; /
+    }
+    .item {
+    border: 1px solid;
+    height: 100px;
+    margin-bottom: 10px;
+    }
+    .item-header {
+    border-bottom: 1px solid;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px;
+    }
+    .item-content {
+    padding: 8px;
+    }
+
+</style>
+<body>
+    <div class='item'>
+        <div class='item-header'>Item 1 Header</div>
+        <div class='item-content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facilis error dolor officiis repellat laboriosam aperiam culpa voluptatibus velit! Assumenda vitae quasi porro mollitia velit ex quod architecto nihil esse.</div>
+       </div>
+       <div class='item'>
+        <div class='item-header'>Item 2 Header</div>
+        <div class='item-content'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis odio itaque est similique earum harum vitae, animi recusandae, officia soluta suscipit impedit ut laboriosam voluptatibus velit cupiditate dicta. Cupiditate, earum!</div>
+       </div>
+       <div class='item'>
+        <div class='item-header'>Item 3 Header</div>
+        <div class='item-content'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, vero fugiat tempora ducimus earum asperiores commodi! Distinctio molestiae corrupti similique veritatis culpa non perferendis autem aperiam! Minus dignissimos dolores doloribus.</div>
+       </div>
+       
+</body>
+</html>
