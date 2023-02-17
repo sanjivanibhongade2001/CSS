@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding a background-image rule via the CSSOM</title>
+</head>
+<body>
+
+</body>
+<script>
+    var stylesheet = document.styleSheets[0].cssRules;
+
+    var end = stylesheet.length - 1;
+
+    stylesheet.insertRule("body { background-image:url('http://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico'); }", end);
+
+</script>
+</html>
