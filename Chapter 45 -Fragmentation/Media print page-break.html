@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media print page-break</title>
+</head>
+<style>
+    @media print{
+        p{
+            page-break-inside: avoid;
+        }
+        h1{
+            page-break-before: always;
+        }
+        h2{
+            page-break-after: avoid;
+        }
+    }
+</style>
+<body>
+    <h1>
+        This is Heading
+    </h1>
+    <h1>
+        This is Sub-heading
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sit quaerat 
+        nobis tempore ratione voluptatem magnam rem, repellendus ab deleniti maxime 
+        cupiditate doloribus obcaecati odit veniam optio excepturi et veritatis.</p>
+</body>
+</html>
