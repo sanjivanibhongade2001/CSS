@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block formattinh context</title>
+</head>
+<style>
+    .img1{
+        float: right;
+        padding: 0;
+        margin: 10px;
+    }
+    .img2{
+        float: left;
+        padding: 10px;
+        margin: 10px;
+    }
+    section {
+    height: 600px;
+    background-color: rgb(224, 206, 247);
+    }
+    .box1 {
+    height: 200px;
+    margin-top: 10px;
+    padding-top: 10px;
+    }
+    .box2[style] {
+    background-color: aliceblue;
+    border: 1px solid steelblue;
+    height: 200px;
+    padding: 20px;
+    margin-top: 70px;
+    overflow: hidden;
+    }
+    .float {
+    float: left;
+    overflow: hidden; /* required by resize:both */
+    resize: both;
+    margin: 15px;
+    width: 300px;
+    height: 500px;
+    background-color: rgba(190, 240, 242, 0.75);
+    border: 1px solid black;
+    padding: 5px;
+    }
+    
+</style>
+<body>
+    <section>
+        <img src="img.jpg" alt="image" class="img1"></div>
+        <div class="float">Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Atque magni doloribus harum similique sint aliquam facilis! 
+            At dolore atque eaque quas quam totam ea omnis aspernatur placeat 
+            corporis! Sed, nulla. Lorem, ipsum dolor sit amet consectetur adipisicing 
+            elit. At possimus ut tempora ullam vero numquam sequi explicabo. 
+            Tempore consectetur accusantium perspiciatis similique et inventore, 
+            perferendis quidem atque accusamus! Iste, quasi. Lorem Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Atque magni doloribus harum similique sint aliquam facilis! 
+            At dolore atque eaque quas quam totam ea omnis aspernatur placeat 
+            corporis! Sed, nulla. Lorem, ipsum dolor sit amet consectetur adipisicing 
+            elit. At possimus ut tempora ullam vero numquam sequi explicabo. 
+            Tempore consectetur accusantium perspiciatis similique et inventore, 
+            perferendis quidem atque accusamus! Iste, quasi. Lorem</div>
+        <div class="box1"><p>Lorem ipsum, dolor sit amet consectetur 
+            adipisicing elit. Ab, molestias nam soluta ullam vitae nobis, 
+            aut incidunt eaque, dolorem itaque pariatur suscipit id. Rerum 
+            error praesentium nesciunt harum, libero consectetur? Lorem ipsum 
+            dolor sit amet consectetur adipisicing elit. Expedita sint, minus 
+            reiciendis omnis unde commodi vel doloremque ipsam, dolorum eos 
+            pariatur, tenetur sapiente? Nostrum ut eum magnam delectus 
+            consequuntur neque.</p>
+   
+        <div class="box2" style="display:flow-root">
+            <img src="img.jpg" alt="Gojo" class="img2">
+
+            <p>Lorem ipsum dolor, consectetur adipisicing elit. Sed 
+                numquam amet repellendus accusamus odit voluptates animi. Sunt, 
+                corrupti nemo dolorem voluptas necessitatibus asperiores assumenda 
+                nam sapiente eveniet aut harum quia! Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. veniam qui commodi expedita 
+                laboriosam velit quia nobis placeat quasi incidunt, alias 
+                laboriosam velit quia nobis placeat quasi incidunt, alias 
+                quaerat cupiditate tenetur veritatis perspiciatis accusamus 
+                natus provident.</p>
+
+        </div>
+    </section>
+</body>
+</html>
